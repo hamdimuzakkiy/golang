@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestIsImeiInValid(t *testing.T) {
+func TestReverseString(t *testing.T) {
 	testingValue := map[string]string{
 		"hamdi ahmadi":          "idamha idmah",
 		"muzakkiy":              "yikkazum",
