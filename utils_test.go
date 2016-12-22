@@ -22,3 +22,38 @@ func TestReverseString(t *testing.T) {
 		assert.Equal(t, ReverseString(key), val, "ReverseString")
 	}
 }
+
+func TestPower(t *testing.T) {
+	type pair struct {
+		a int
+		b int
+	}
+
+	testingValue := map[*pair]int{
+		&pair{
+			3, 3,
+		}: 27,
+		&pair{
+			10, 3,
+		}: 1000,
+		&pair{
+			2, 8,
+		}: 256,
+		&pair{
+			9, 3,
+		}: 729,
+		&pair{
+			1, 2,
+		}: 1,
+		&pair{
+			101, 1,
+		}: 101,
+		&pair{
+			100, 0,
+		}: 1,
+	}
+
+	for key, val := range testingValue {
+		assert.Equal(t, val, Power(key.a, key.b), "ReverseString")
+	}
+}
