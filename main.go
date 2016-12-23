@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	fmt.Println("hello")
 	s := ReverseString("test")
 	fmt.Println(s)
 
