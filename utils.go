@@ -21,6 +21,10 @@ func Power(a, b int) int {
 	return temp
 }
 
+func Plus(a, b int) int {
+	return a + b
+}
+
 func AbsoultDivisor(a, b int) (int, error) {
 	if b == 0 {
 		return 0, errors.New("Divisor by 0")

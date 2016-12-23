@@ -19,8 +19,12 @@ func TestReverseString(t *testing.T) {
 	}
 
 	for key, val := range testingValue {
-		assert.Equal(t, ReverseString(key), val, "ReverseString")
+		assert.Equal(t, val, ReverseString(key), "ReverseString")
 	}
+}
+
+func TestPlus(t *testing.T) {
+	assert.Equal(t, 4, Plus(1, 3), "ReverseString")
 }
 
 func TestPower(t *testing.T) {
