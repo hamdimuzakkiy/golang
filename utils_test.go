@@ -61,3 +61,7 @@ func TestPower(t *testing.T) {
 		assert.Equal(t, val, Power(key.a, key.b), "ReverseString")
 	}
 }
+
+func TestSub(t *testing.T) {
+	assert.Equal(t, 10, Sub(20,10), "Tes Sub should return a -b")	
+}

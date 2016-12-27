@@ -1,7 +1,7 @@
 package main
 
 import (
-	"errors"
+	// "errors"
 	"fmt"
 )
 
@@ -13,12 +13,17 @@ func ReverseString(s string) string {
 }
 
 func Power(a, b int) int {
-	temp := 1
-	for b > 0 {
-		temp *= a
-		b -= 1
+	if b == 0 {
+		return 1
 	}
-	return temp
+	
+	temp := Power(a,b/2)
+
+	if b %2 ==0 {
+		return temp*temp
+	} else {
+		return temp*temp*a
+	}
 }
 
 func Plus(a, b int) int {
@@ -27,10 +32,14 @@ func Plus(a, b int) int {
 
 func AbsoultDivisor(a, b int) (int, error) {
 	if b == 0 {
-		return 0, errors.New("Divisor by 0")
+		return 0, nil
 	}
 	if a/b < 0 {
 		return -a / b, nil
 	}
 	return a / b, nil
+}
+
+func Sub(a, b int) int {
+	return a-b
 }
