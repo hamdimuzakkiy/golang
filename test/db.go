@@ -16,6 +16,7 @@ type DbInterfaceGet interface {
 type Person struct {
 	Name string `db:"name"`
 	Age  int    `db:"age"`
+	Sex  int    `db:"sex"`
 }
 
 func GetPerson(d DbInterfaceGet) Person {
