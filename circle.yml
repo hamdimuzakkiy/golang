@@ -1,0 +1,5 @@
+dependencies:
+  override:
+    - go get -t -d -v ./...
+    - go get -u github.com/hamdimuzakkiy/mocktemplate/sqlxmock
+    - go build -v
