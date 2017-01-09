@@ -16,13 +16,13 @@ func Power(a, b int) int {
 	if b == 0 {
 		return 1
 	}
-	
-	temp := Power(a,b/2)
 
-	if b %2 ==0 {
-		return temp*temp
+	temp := Power(a, b/2)
+
+	if b%2 == 0 {
+		return temp * temp
 	} else {
-		return temp*temp*a
+		return temp * temp * a
 	}
 }
 
@@ -41,5 +41,5 @@ func AbsoultDivisor(a, b int) (int, error) {
 }
 
 func Sub(a, b int) int {
-	return a-b
+	return a - b
 }
