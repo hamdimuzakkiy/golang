@@ -2,5 +2,5 @@ dependencies:
   override:
     - go get -t -d -v ./...
     - go get -u github.com/hamdimuzakkiy/mocktemplate/sqlxmock
-    - rm -rf /home/ubuntu/.go_workspace/src/github.com/hamdimuzakkiy
+    - cp -R /home/ubuntu/golang/. /home/ubuntu/.go_workspace/src/github.com/hamdimuzakkiy/golang
     - go build -v
