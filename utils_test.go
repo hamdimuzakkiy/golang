@@ -63,5 +63,5 @@ func TestPower(t *testing.T) {
 }
 
 func TestSub(t *testing.T) {
-	assert.Equal(t, 10, Sub(20,10), "Tes Sub should return a -b")	
+	assert.Equal(t, 10, Sub(20, 10), "Tes Sub should return a -b")
 }
