@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/hamdimuzakkiy/golang/src/regex"
 )
 
 func main() {
@@ -28,4 +30,6 @@ func main() {
 		fmt.Println(living.Talk())
 		fmt.Println(living.Run())
 	}
+
+	regex.Plus(1, 2)
 }
