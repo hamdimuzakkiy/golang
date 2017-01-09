@@ -32,5 +32,5 @@ func main() {
 		fmt.Println(living.Run())
 	}
 
-	regex.Plus(1, 2, 3)
+	regex.Plus(1, 2, 3, 4)
 }
