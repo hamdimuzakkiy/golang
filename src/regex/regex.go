@@ -1,5 +1,5 @@
 package regex
 
-func Plus(a int, b int) int {
-	return a + b
+func Plus(a int, b int, c int) int {
+	return a + b + c
 }
